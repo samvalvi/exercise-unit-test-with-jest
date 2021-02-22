@@ -17,24 +17,24 @@ test('One Euro should be 1.206', () => {
 
     const expected = 10 * 1.206;
 
-    expect(expected).toBe(dollars);
+    expect(expected).toBeCloseTo(dollars);
 });
 
 
-test('One Dollar should be 106.15', () => {
+test('One Dollar should be 106.157', () => {
     const yen = fromDollarToYen(10);
 
-    const expected = 10 * 106.15;
+    const expected = 10 * 106.157;
 
     expect(expected).toBe(yen);
 });
 
-test('One Yen should be 0.0062', () => {
-    const pound = fromYenToPound(12);
+test('One Yen should be 0.00624', () => {
+    const pound = fromYenToPound(10);
 
-    const expected = 12 * 0.0062;
+    const expected = 10 * 0.00624;
 
-    expect(expected).toBe(pound);
+    expect(expected).toBeCloseTo(pound);
 });
 
 
