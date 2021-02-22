@@ -21,18 +21,18 @@ test('One Euro should be 1.206', () => {
 });
 
 
-test('One Dollar should be 127.9', () => {
+test('One Dollar should be 106.15', () => {
     const yen = fromDollarToYen(10);
 
-    const expected = 10 * 127.9;
+    const expected = 10 * 106.15;
 
     expect(expected).toBe(yen);
 });
 
-test('One Yen should be 0.8', () => {
+test('One Yen should be 0.0062', () => {
     const pound = fromYenToPound(12);
 
-    const expected = 12 * 0.8;
+    const expected = 12 * 0.0062;
 
     expect(expected).toBe(pound);
 });

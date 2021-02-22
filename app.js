@@ -14,13 +14,15 @@ console.log(fromEuroToDollar(120));
 
 
 const fromDollarToYen = dollar => {
-    return dollar * 127.9;
+    //First convert dollar to Euro.
+    return (dollar * 0.83) * 127.9;
 }
 
 console.log(fromDollarToYen(100));
 
 const fromYenToPound = yen => {
-    return yen * 0.8;
+    //First convert Yen to Euro.
+    return (yen * 0.0078) * 0.8;
 }
 
 console.log(fromYenToPound(100));
